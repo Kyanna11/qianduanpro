@@ -477,3 +477,78 @@ body{
     background:#182534;
 
 }
+.message.user{
+
+    margin-left:auto;
+
+    background:linear-gradient(
+        135deg,
+        #5ea8ff,
+        #4a73ff
+    );
+
+}
+
+.chat-input{
+
+    display:flex;
+
+    gap:12px;
+
+    padding:18px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    background:#0b131d;
+
+}
+
+.chat-input input{
+
+    flex:1;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#162231;
+
+    color:white;
+
+    padding:0 18px;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+.chat-input button{
+
+    width:58px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+        135deg,
+        #5ea8ff,
+        #4a73ff
+    );
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+.chat-input button:active{
+
+    transform:scale(.96);
+
+}
