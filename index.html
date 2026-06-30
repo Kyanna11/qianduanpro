@@ -1,3 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tidal Echo</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <div class="background"></div>
+
+    <!-- 首页 -->
+
+    <main class="home">
+
+        <div class="logo">
+
+            <div class="wave"></div>
+
+            <h1>Tidal Echo</h1>
+
+            <p>
+                A quiet place to think.
+            </p>
+
+        </div>
+
+        <div class="menu">
+
+            <button id="startChat">
+                开始聊天
+            </button>
+
+            <button id="openSettings">
+                AI 设置
+            </button>
+
+        </div>
+
+    </main>
+
+    <!-- 设置面板 -->
+
+    <div class="settings-overlay" id="settingsOverlay">
+
+        <div class="settings-panel">
+
+            <h2>⚙ AI 设置</h2>
+
+            <p class="subtitle">
+                配置你的 AI 服务
+            </p>
+
+            <label>
+
+                Provider
+
+                <select>
+
+                    <option>Anthropic</option>
+
+                    <option>OpenAI Compatible</option>
+
+                </select>
+
+            </label>
+
+            <label>
+
+                Base URL
+
+                <input
+                    type="text"
+                    placeholder="https://api.example.com/v1">
+
+            </label>
+
+            <label>
+
+                API Key
+
+                <input
+                    type="password"
+                    placeholder="sk-xxxxxxxx">
+
+            </label>
+
+            <label>
+
+                Model
+
+                <input
+                    type="text"
+                    placeholder="claude-sonnet-4">
+
+            </label>
+
+            <div class="panel-buttons">
+
+                <button id="closeSettings">
+
+                    取消
+
+                </button>
+
+                <button id="saveSettings">
+
+                    保存
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
     <!-- 聊天页面 -->
 
     <div class="chat-page" id="chatPage">
@@ -29,6 +156,18 @@
             </div>
 
         </main>
+
+        <div class="chat-input">
+
+            <input
+                type="text"
+                placeholder="输入消息...">
+
+            <button>
+                ↑
+            </button>
+
+        </div>
 
     </div>
 
