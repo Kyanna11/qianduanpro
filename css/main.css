@@ -372,3 +372,108 @@ body{
     }
 
 }
+/* ========================= */
+/* Chat Page */
+/* ========================= */
+
+.chat-page{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#081018;
+
+    display:none;
+
+    flex-direction:column;
+
+    z-index:20;
+
+}
+
+.chat-header{
+
+    height:90px;
+
+    padding:24px;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.chat-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.chat-avatar{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#8fd6ff,#4f79ff);
+
+    box-shadow:0 0 20px rgba(90,150,255,.35);
+
+}
+
+.chat-title h2{
+
+    font-size:20px;
+
+    margin:0;
+
+}
+
+.chat-title span{
+
+    display:block;
+
+    margin-top:4px;
+
+    color:#79d88e;
+
+    font-size:13px;
+
+}
+
+.chat-body{
+
+    flex:1;
+
+    padding:24px;
+
+    overflow-y:auto;
+
+}
+
+.message{
+
+    max-width:80%;
+
+    padding:16px 18px;
+
+    border-radius:18px;
+
+    line-height:1.7;
+
+}
+
+.message.ai{
+
+    background:#182534;
+
+}
