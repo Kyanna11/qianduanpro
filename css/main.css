@@ -81,45 +81,56 @@ body{
 
 .wave{
 
-    width:70px;
+    width:88px;
 
-    height:70px;
+    height:88px;
 
     margin:auto;
 
-    margin-bottom:24px;
+    margin-bottom:28px;
 
     border-radius:50%;
 
-    background:
+    position:relative;
 
-    radial-gradient(circle,
-    #5fd2ff,
-    #296cff);
+    background:
+    radial-gradient(circle at 35% 35%,
+    #a7e8ff,
+    #59b7ff 40%,
+    #2f6dff 100%);
 
     box-shadow:
 
-    0 0 40px rgba(70,170,255,.45);
+    0 0 60px rgba(92,170,255,.40),
+
+    0 0 120px rgba(92,170,255,.18);
+
+    animation:
+    breathe 4s ease-in-out infinite;
 
 }
 
 .logo h1{
 
-    font-size:48px;
+    font-size:56px;
 
     font-weight:700;
 
-    letter-spacing:2px;
+    letter-spacing:4px;
+
+    color:white;
 
 }
 
 .logo p{
 
-    margin-top:14px;
+    margin-top:18px;
 
-    color:#8da8c7;
+    color:#8ea9c9;
 
-    font-size:16px;
+    font-size:17px;
+
+    line-height:1.8;
 
 }
 
@@ -135,9 +146,9 @@ body{
 
 .menu button{
 
-    width:260px;
+    width:280px;
 
-    height:54px;
+    height:58px;
 
     border:none;
 
@@ -147,29 +158,41 @@ body{
 
     font-size:16px;
 
-    transition:.25s;
+    transition:.35s;
+
+    backdrop-filter:blur(20px);
 
 }
 
 .menu button:first-child{
 
-    background:#4e8cff;
+    background:linear-gradient(
+        135deg,
+        #5ea8ff,
+        #4a73ff
+    );
 
     color:white;
+
+    box-shadow:0 10px 30px rgba(79,130,255,.35);
 
 }
 
 .menu button:last-child{
 
-    background:#162230;
+    background:rgba(255,255,255,.06);
 
-    color:#dbe8ff;
+    color:white;
+
+    border:1px solid rgba(255,255,255,.08);
 
 }
 
 .menu button:hover{
 
-    transform:translateY(-2px);
+    transform:translateY(-4px);
+
+}
 
 }
 /* ========================= */
@@ -316,5 +339,26 @@ body{
     background:#4d8cff;
 
     color:white;
+
+}
+@keyframes breathe{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
 
 }
