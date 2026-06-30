@@ -4,7 +4,8 @@ const settingsButton = document.getElementById("openSettings");
 const overlay = document.getElementById("settingsOverlay");
 const closeButton = document.getElementById("closeSettings");
 const saveButton = document.getElementById("saveSettings");
-
+const home = document.querySelector(".home");
+const chatPage = document.getElementById("chatPage");
 const providerInput = document.querySelector("select");
 const baseUrlInput = document.querySelector('input[type="text"]');
 const apiKeyInput = document.querySelector('input[type="password"]');
@@ -17,9 +18,11 @@ baseUrlInput.value = config.baseURL;
 apiKeyInput.value = config.apiKey;
 modelInput.value = config.model;
 
-startChatButton.addEventListener("click",()=>{
+startChatButton.addEventListener("click", () => {
 
-    alert("聊天页面开发中 🌊");
+    home.style.display = "none";
+
+    chatPage.style.display = "flex";
 
 });
 
