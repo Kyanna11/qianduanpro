@@ -172,3 +172,149 @@ body{
     transform:translateY(-2px);
 
 }
+/* ========================= */
+/* AI 设置面板 */
+/* ========================= */
+
+.settings-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+
+    align-items:flex-end;
+
+    justify-content:center;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.3s;
+
+}
+
+.settings-overlay.show{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+}
+
+.settings-panel{
+
+    width:100%;
+
+    max-width:480px;
+
+    background:#101923;
+
+    border-radius:28px 28px 0 0;
+
+    padding:28px;
+
+    transform:translateY(100%);
+
+    transition:.35s;
+
+}
+
+.settings-overlay.show .settings-panel{
+
+    transform:translateY(0);
+
+}
+
+.settings-panel h2{
+
+    text-align:center;
+
+    margin-bottom:8px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#89a4c7;
+
+    margin-bottom:26px;
+
+}
+
+.settings-panel label{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    margin-bottom:18px;
+
+}
+
+.settings-panel input,
+.settings-panel select{
+
+    height:46px;
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:0 14px;
+
+    background:#172432;
+
+    color:white;
+
+    outline:none;
+
+}
+
+.panel-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:26px;
+
+}
+
+.panel-buttons button{
+
+    flex:1;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+}
+
+#closeSettings{
+
+    background:#243241;
+
+    color:white;
+
+}
+
+#saveSettings{
+
+    background:#4d8cff;
+
+    color:white;
+
+}
