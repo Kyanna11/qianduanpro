@@ -1,19 +1,33 @@
-// =====================================
-// Tidal Echo
-// app.js
-// =====================================
-
 const startChatButton = document.getElementById("startChat");
 const settingsButton = document.getElementById("openSettings");
 
+const overlay = document.getElementById("settingsOverlay");
+const closeButton = document.getElementById("closeSettings");
+
 startChatButton.addEventListener("click", () => {
 
-    alert("聊天页面，马上就来 🌊");
+    alert("聊天页面开发中 🌊");
 
 });
 
 settingsButton.addEventListener("click", () => {
 
-    alert("AI 设置，马上就来 ⚙️");
+    overlay.classList.add("show");
+
+});
+
+closeButton.addEventListener("click", () => {
+
+    overlay.classList.remove("show");
+
+});
+
+overlay.addEventListener("click",(e)=>{
+
+    if(e.target===overlay){
+
+        overlay.classList.remove("show");
+
+    }
 
 });
